@@ -1,6 +1,6 @@
 ﻿using advent_of_code_2024;
 
-var day = Day.Day4;
+var day = Day.Day5;
 
 switch (day.DayNr)
 {
@@ -15,6 +15,9 @@ switch (day.DayNr)
         break;
     case 4:
         new Day4(day).FindSolution();
+        break;
+    case 5:
+        new Day5(day).FindSolution();
         break;
     default:
         Console.WriteLine("Not implemented yet");
