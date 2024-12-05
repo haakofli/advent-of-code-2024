@@ -1,6 +1,9 @@
 ﻿using advent_of_code_2024;
+using System.Diagnostics;
 
 var day = Day.Day5;
+
+var stopwatch = Stopwatch.StartNew();
 
 switch (day.DayNr)
 {
@@ -23,3 +26,6 @@ switch (day.DayNr)
         Console.WriteLine("Not implemented yet");
         break;
 };
+
+stopwatch.Stop();
+Console.WriteLine($"Day {day.DayNr} completed in {stopwatch.ElapsedMilliseconds} ms.");
