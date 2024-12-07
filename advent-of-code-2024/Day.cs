@@ -36,6 +36,18 @@ public record Day
         FileName = "day5.txt",
     };
     
+    public static Day Day6 => new Day
+    {
+        DayNr = 6,
+        FileName = "day6.txt",
+    };
+    
+    public static Day Day7 => new Day
+    {
+        DayNr = 7,
+        FileName = "day7.txt",
+    };
+    
     public string GetInputFilePath()
     {
         return $"{RootPath}/{FileName}";
