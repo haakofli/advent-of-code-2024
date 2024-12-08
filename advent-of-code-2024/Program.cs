@@ -1,7 +1,7 @@
 ﻿using advent_of_code_2024;
 using System.Diagnostics;
 
-var day = Day.Day7;
+var day = Day.Day8;
 
 var stopwatch = Stopwatch.StartNew();
 
@@ -27,6 +27,9 @@ switch (day.DayNr)
         break;
     case 7:
         new Day7(day).FindSolution();
+        break;
+    case 8:
+        new Day8(day).FindSolution();
         break;
     default:
         Console.WriteLine("Not implemented yet");

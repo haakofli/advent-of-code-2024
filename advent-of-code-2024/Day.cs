@@ -4,7 +4,8 @@ public record Day
 {
     public required string FileName { get; init; }
     public required int DayNr { get; init; }
-    private const string RootPath = "../../../../advent-of-code-2024/Inputs";
+    // private const string RootPath = "../../../../advent-of-code-2024/Inputs";
+    private const string RootPath = "Inputs";
 
     public static Day Day1 => new Day
     {
@@ -46,6 +47,12 @@ public record Day
     {
         DayNr = 7,
         FileName = "day7.txt",
+    };
+    
+    public static Day Day8 => new Day
+    {
+        DayNr = 8,
+        FileName = "day8.txt",
     };
     
     public string GetInputFilePath()
