@@ -14,7 +14,6 @@ public class Day8(Day day)
     {
         var map = CreateMap();
         var antennas = GetAntennas(map);
-        PrintMap(map);
         foreach (var antenna in antennas)
         {
             var nodes = antenna.Value;
@@ -29,7 +28,6 @@ public class Day8(Day day)
 
         var sum = map.SelectMany(x => x).Count(x => x.Value == "#");
         Console.WriteLine(sum);
-        PrintMap(map);
     }
 
     private void CreateAntiNodes(Node node1, Node node2, Node[][] map)
